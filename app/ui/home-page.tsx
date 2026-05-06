@@ -124,10 +124,10 @@ function ProjectCard() {
         ))}
       </ul>
       <div mix={cardLinksStyle}>
-        <a href={url} mix={linkBtnStyle}>
+        <a href={url} target="_blank" rel="noopener" mix={linkBtnStyle}>
           Visit site <span aria-hidden="true">&rarr;</span>
         </a>
-        <a href={github} mix={linkBtnSecondaryStyle}>
+        <a href={github} target="_blank" rel="noopener" mix={linkBtnSecondaryStyle}>
           <GitHubIcon /> GitHub
         </a>
       </div>
@@ -164,7 +164,7 @@ function Footer() {
   return () => (
     <footer mix={footerStyle}>
       <div mix={footerLinksStyle}>
-        <a href="https://github.com/nathanjmorton" mix={footerLinkStyle}>
+        <a href="https://github.com/nathanjmorton" target="_blank" rel="noopener" mix={footerLinkStyle}>
           <GitHubIcon /> nathanjmorton
         </a>
       </div>
