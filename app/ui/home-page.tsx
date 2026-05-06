@@ -20,7 +20,7 @@ const PROJECTS = [
     tagline: 'TypeScript subset \u2192 C transpiler',
     description:
       'A compiler written in Zig that transpiles a strict subset of TypeScript directly to idiomatic C. No Wasm intermediate. No runtime.',
-    url: 'https://zigtsc.nathanjmorton.com',
+    url: 'https://zigtsc.vercel.app',
     github: 'https://github.com/nathanjmorton/zigtsc',
     features: ['Direct TS \u2192 C', 'Written in Zig', 'Type-driven codegen', 'Pairs with zigc'],
   },
