@@ -42,6 +42,7 @@ export function HomePage() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="color-scheme" content="light dark" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <title>Nathan J. Morton</title>
         <meta name="description" content="Open-source Zig tooling for C and TypeScript developers." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

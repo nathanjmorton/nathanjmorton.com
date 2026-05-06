@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#0d1117"/>
+  <!-- Zig lightning bolt -->
+  <polygon points="17,3 7,16 13,16 11,29 22,15 16,15" fill="#f7a41d"/>
+  <!-- C arc wrapping the bolt -->
+  <path d="M22,8 A10,10 0 1,0 22,24" fill="none" stroke="#e6edf3" stroke-width="3" stroke-linecap="round"/>
+</svg>
