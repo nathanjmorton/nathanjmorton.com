@@ -15,10 +15,9 @@ export default async function handler(req: IncomingMessage, res: ServerResponse)
   const request = new Request(url.toString(), {
     method: req.method,
     headers,
-    body: req.method !== 'GET' && req.method !== 'HEAD' ? req : undefined,
-    // @ts-expect-error Node.js duplex option
+    body: req.method !== 'GET' && req.method !== 'HEAD' ? (req as unknown as BodyInit) : undefined,
     duplex: 'half',
-  })
+  } as RequestInit)
 
   try {
     const response = await router.fetch(request)

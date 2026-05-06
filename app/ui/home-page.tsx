@@ -24,6 +24,15 @@ const PROJECTS = [
     github: 'https://github.com/nathanjmorton/zigtsc',
     features: ['Direct TS \u2192 C', 'Written in Zig', 'Type-driven codegen', 'Pairs with zigc'],
   },
+  {
+    name: 'zigc-bustub',
+    tagline: 'Migrating BusTub from CMake to zigc',
+    description:
+      'A walkthrough of recreating CMU\u2019s BusTub RDBMS as a greenfield zigc project with vendored dependencies hosted on S3.',
+    url: 'https://zigc-bustub.vercel.app',
+    github: 'https://github.com/nathanjmorton/zigc-bustub',
+    features: ['CMake \u2192 zigc', 'Vendored deps', 'S3-hosted registry', 'BusTub RDBMS'],
+  },
 ] as const
 
 export function HomePage() {
@@ -216,7 +225,7 @@ const bodyStyle = css({
 
 const mainStyle = css({
   width: '100%',
-  maxWidth: '1080px',
+  maxWidth: '1200px',
   margin: '0 auto',
   display: 'flex',
   flexDirection: 'column',
@@ -249,9 +258,9 @@ const subtitleStyle = css({
 
 const cardsGridStyle = css({
   display: 'grid',
-  gridTemplateColumns: 'repeat(2, 1fr)',
+  gridTemplateColumns: 'repeat(3, 1fr)',
   gap: '24px',
-  '@media (max-width: 720px)': { gridTemplateColumns: '1fr' },
+  '@media (max-width: 960px)': { gridTemplateColumns: '1fr' },
 })
 
 const cardStyle = css({
@@ -376,6 +385,7 @@ const embedsGridStyle = css({
   display: 'grid',
   gridTemplateColumns: 'repeat(2, 1fr)',
   gap: '24px',
+  '& > :last-child:nth-child(odd)': { gridColumn: '1 / -1' },
   '@media (max-width: 720px)': { gridTemplateColumns: '1fr' },
 })
 
