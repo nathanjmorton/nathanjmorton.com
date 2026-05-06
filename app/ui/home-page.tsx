@@ -20,7 +20,7 @@ const PROJECTS = [
     tagline: 'TypeScript subset \u2192 C transpiler',
     description:
       'A compiler written in Zig that transpiles a strict subset of TypeScript directly to idiomatic C. No Wasm intermediate. No runtime.',
-    url: 'https://zigtsc.vercel.app',
+    url: 'https://zigtsc.nathanjmorton.com',
     github: 'https://github.com/nathanjmorton/zigtsc',
     features: ['Direct TS \u2192 C', 'Written in Zig', 'Type-driven codegen', 'Pairs with zigc'],
   },
@@ -29,7 +29,7 @@ const PROJECTS = [
     tagline: 'Migrating BusTub from CMake to zigc',
     description:
       'A walkthrough of recreating CMU\u2019s BusTub RDBMS as a greenfield zigc project with vendored dependencies hosted on S3.',
-    url: 'https://zigc-bustub.vercel.app',
+    url: 'https://zigc-bustub.nathanjmorton.com',
     github: 'https://github.com/nathanjmorton/zigc-bustub',
     features: ['CMake \u2192 zigc', 'Vendored deps', 'S3-hosted registry', 'BusTub RDBMS'],
   },
